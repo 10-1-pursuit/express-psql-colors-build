@@ -10,6 +10,7 @@ const cors = require('cors')
 // Middleware
 app.use(cors())
 app.use(express.json())
+// When the URL starts w /colors, use the colorsController to route us appropriately
 app.use("/colors", colorsController)
 
 
