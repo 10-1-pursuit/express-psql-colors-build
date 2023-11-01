@@ -1,5 +1,6 @@
 const express = require('express')
 const colors = express.Router()
+const { getAllColors } = require('../queries/color')
 
 
 // GET all colors
