@@ -2,7 +2,7 @@ const checkName = (req, res, next) => {
     if(req.body.name){
         // next() comes from the parameters
         // next() tells the route that this piece of middleware is satisfied and can move onto the next argument in the route.
-        return next()
+        next()
     } else {
         res.status(400).json({ error: 'Name is required'})
     }
